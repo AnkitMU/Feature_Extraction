@@ -4,6 +4,7 @@
 This repository contains XML model files and a Python script designed to parse and extract information from UML class diagrams. The main components include:
 
 `model.xml`: Sample XML files representing UML class diagrams in XMI format. These files can be used to demonstrate feature extraction, visualization, or analysis of class structures, attributes, operations, and relationships.
+
 `extractor.py`: A Python script that parses the XML files, extracts class details such as names, attributes, data types, and operations, and outputs the information in a structured format.
 
 **Features:**
