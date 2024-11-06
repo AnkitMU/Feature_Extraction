@@ -1,0 +1,24 @@
+Class: Person
+name:String
+age:Integer
+address:String
+  Operation: getDetails
+  Operation: updateAddress
+Class: Employee
+employeeID:Integer
+department:String
+  Operation: calculateSalary
+  Operation: promote
+Class: Manager
+managedTeams:Integer
+budget:Float
+  Operation: approveBudget
+  Operation: assignTask
+Association ID: Association1
+  Connected Classes: ['PersonClass', 'EmployeeClass']
+  Class: PersonClass, Multiplicity: 0..*
+  Class: EmployeeClass, Multiplicity: 0..*
+Association ID: Association2
+  Connected Classes: ['EmployeeClass', 'ManagerClass']
+  Class: EmployeeClass, Multiplicity: 0..*
+  Class: ManagerClass, Multiplicity: 0..*
